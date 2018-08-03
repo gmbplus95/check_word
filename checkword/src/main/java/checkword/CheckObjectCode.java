@@ -12,7 +12,6 @@ import java.util.Scanner;
 import com.google.gson.Gson;
 /**
  * @author nvbac
- * Aug 3, 2018
  */
 public class CheckObjectCode {
 	
@@ -152,33 +151,33 @@ public class CheckObjectCode {
 					insert.append("',");
 					//field
 					insert.append("{");
-					insert.append(isContainsKey(checkOb.getField(),"nature_fluid")==null?"":isContainsKey(checkOb.getField(), "nature_fluid"));
-					insert.append(isContainsKey(checkOb.getField(),"storage_capacity")==null?"":","+ isContainsKey(checkOb.getField(), "storage_capacity"));
+					insert.append(isContainsKey(checkOb.getField(),"nature_fluid")==null?EMPTY:isContainsKey(checkOb.getField(), "nature_fluid"));
+					insert.append(isContainsKey(checkOb.getField(),"storage_capacity")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "storage_capacity"));
 					insert.append(isContainsKey(checkOb.getField(),"coefficient_pci")==null?"":","+ isContainsKey(checkOb.getField(), "coefficient_pci"));
-					insert.append(isContainsKey(checkOb.getField(),"calculation_formula")==null?"":","+ isContainsKey(checkOb.getField(), "calculation_formula"));
-					insert.append(isContainsKey(checkOb.getField(),"delivery_id")==null?"":","+ isContainsKey(checkOb.getField(), "delivery_id"));
-					insert.append(isContainsKey(checkOb.getField(),"stock_meter")==null?"":","+ isContainsKey(checkOb.getField(), "stock_meter"));
-					insert.append(isContainsKey(checkOb.getField(),"fluid_name")==null?"":","+ isContainsKey(checkOb.getField(), "fluid_name"));
-					insert.append(isContainsKey(checkOb.getField(),"meter_type")==null?"":","+ isContainsKey(checkOb.getField(), "meter_type"));
-					insert.append(isContainsKey(checkOb.getField(),"releve_priority")==null?"":","+ isContainsKey(checkOb.getField(), "releve_priority"));
-					insert.append(isContainsKey(checkOb.getField(),"meter_billed")==null?"":","+ isContainsKey(checkOb.getField(), "meter_billed"));
-					insert.append(isContainsKey(checkOb.getField(),"coefficient_correction")==null?"":","+ isContainsKey(checkOb.getField(), "coefficient_correction"));
-					insert.append(isContainsKey(checkOb.getField(),"included_calculation_nc")==null?"":","+ isContainsKey(checkOb.getField(), "included_calculation_nc"));
-					insert.append(isContainsKey(checkOb.getField(),"libel")==null?"":","+ isContainsKey(checkOb.getField(), "libel"));
-					insert.append(isContainsKey(checkOb.getField(),"number_of_wheel")==null?"":","+ isContainsKey(checkOb.getField(), "number_of_wheel"));
-					insert.append(isContainsKey(checkOb.getField(),"sub_type")==null?"":","+ isContainsKey(checkOb.getField(), "sub_type"));
-					insert.append(isContainsKey(checkOb.getField(),"unit_code")==null?"":","+ isContainsKey(checkOb.getField(), "unit_code"));
-					insert.append(isContainsKey(checkOb.getField(),"object_code")==null?"":","+ isContainsKey(checkOb.getField(), "object_code"));
-					insert.append(isContainsKey(checkOb.getField(),"fluid")==null?"":","+ isContainsKey(checkOb.getField(), "fluid"));
-					insert.append(isContainsKey(checkOb.getField(),"obligatory_to_entry")==null?"":","+ isContainsKey(checkOb.getField(), "obligatory_to_entry"));
-					insert.append(isContainsKey(checkOb.getField(),"time_resolution")==null?"":","+ isContainsKey(checkOb.getField(), "time_resolution"));
-					insert.append(isContainsKey(checkOb.getField(),"coefficient_pcs")==null?"":","+ isContainsKey(checkOb.getField(), "coefficient_pcs"));
-					insert.append(isContainsKey(checkOb.getField(),"consumption_threshold")==null?"":","+ isContainsKey(checkOb.getField(), "consumption_threshold"));
-					insert.append(isContainsKey(checkOb.getField(),"source")==null?"":","+ isContainsKey(checkOb.getField(), "source"));
-					insert.append(isContainsKey(checkOb.getField(),"actif")==null?"":","+ isContainsKey(checkOb.getField(), "actif"));
-					insert.append(isContainsKey(checkOb.getField(),"is_deleted")==null?"":","+ isContainsKey(checkOb.getField(), "is_deleted"));
-					insert.append(isContainsKey(checkOb.getField(),"order_number")==null?"":","+ isContainsKey(checkOb.getField(), "order_number"));
-					insert.append(isContainsKey(checkOb.getField(),"ref_supply")==null?"":","+ isContainsKey(checkOb.getField(), "ref_supply"));
+					insert.append(isContainsKey(checkOb.getField(),"calculation_formula")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "calculation_formula"));
+					insert.append(isContainsKey(checkOb.getField(),"delivery_id")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "delivery_id"));
+					insert.append(isContainsKey(checkOb.getField(),"stock_meter")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "stock_meter"));
+					insert.append(isContainsKey(checkOb.getField(),"fluid_name")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "fluid_name"));
+					insert.append(isContainsKey(checkOb.getField(),"meter_type")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "meter_type"));
+					insert.append(isContainsKey(checkOb.getField(),"releve_priority")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "releve_priority"));
+					insert.append(isContainsKey(checkOb.getField(),"meter_billed")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "meter_billed"));
+					insert.append(isContainsKey(checkOb.getField(),"coefficient_correction")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "coefficient_correction"));
+					insert.append(isContainsKey(checkOb.getField(),"included_calculation_nc")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "included_calculation_nc"));
+					insert.append(isContainsKey(checkOb.getField(),"libel")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "libel"));
+					insert.append(isContainsKey(checkOb.getField(),"number_of_wheel")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "number_of_wheel"));
+					insert.append(isContainsKey(checkOb.getField(),"sub_type")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "sub_type"));
+					insert.append(isContainsKey(checkOb.getField(),"unit_code")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "unit_code"));
+					insert.append(isContainsKey(checkOb.getField(),"object_code")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "object_code"));
+					insert.append(isContainsKey(checkOb.getField(),"fluid")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "fluid"));
+					insert.append(isContainsKey(checkOb.getField(),"obligatory_to_entry")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "obligatory_to_entry"));
+					insert.append(isContainsKey(checkOb.getField(),"time_resolution")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "time_resolution"));
+					insert.append(isContainsKey(checkOb.getField(),"coefficient_pcs")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "coefficient_pcs"));
+					insert.append(isContainsKey(checkOb.getField(),"consumption_threshold")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "consumption_threshold"));
+					insert.append(isContainsKey(checkOb.getField(),"source")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "source"));
+					insert.append(isContainsKey(checkOb.getField(),"actif")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "actif"));
+					insert.append(isContainsKey(checkOb.getField(),"is_deleted")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "is_deleted"));
+					insert.append(isContainsKey(checkOb.getField(),"order_number")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "order_number"));
+					insert.append(isContainsKey(checkOb.getField(),"ref_supply")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "ref_supply"));
 					insert.append("},");
 					insert.append("'");
 					insert.append(checkOb.getObjectName());
@@ -193,18 +192,18 @@ public class CheckObjectCode {
 					else {
 						if(checkOb.getRefChild().containsKey("iot_params.object.object_id") && checkOb.getRefChild().containsKey("iot_params.site.site_id")) {
 							insert.append("{");
-							insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.object.object_id")==null?"":isContainsKey(checkOb.getRefChild(), "iot_params.object.object_id"));
-							insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.site.site_id")==null?"":","+isContainsKey(checkOb.getRefChild(), "iot_params.site.site_id"));
+							insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.object.object_id")==null?EMPTY:isContainsKey(checkOb.getRefChild(), "iot_params.object.object_id"));
+							insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.site.site_id")==null?EMPTY:","+isContainsKey(checkOb.getRefChild(), "iot_params.site.site_id"));
 							insert.append("},");
 						}
 						else if(checkOb.getRefChild().containsKey("iot_params.object.object_id")){
 							insert.append("{");
-							insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.object.object_id")==null?"":isContainsKey(checkOb.getRefChild(), "iot_params.object.object_id"));
+							insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.object.object_id")==null?EMPTY:isContainsKey(checkOb.getRefChild(), "iot_params.object.object_id"));
 							insert.append("},");
 						}
 							else {
 								insert.append("{");
-								insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.site.site_id")==null?"":isContainsKey(checkOb.getRefChild(), "iot_params.site.site_id"));
+								insert.append(isContainsKey(checkOb.getRefChild(),"iot_params.site.site_id")==null?EMPTY:isContainsKey(checkOb.getRefChild(), "iot_params.site.site_id"));
 								insert.append("'},");
 							}
 							
@@ -220,18 +219,18 @@ public class CheckObjectCode {
 					else {
 						if(checkOb.getRefParent().containsKey("iot_params.object.object_id") && checkOb.getRefParent().containsKey("iot_params.site.site_id")) {
 							insert.append("{");
-							insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.object.object_id")==null?"":isContainsKey(checkOb.getRefParent(), "iot_params.object.object_id"));
-							insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.site.site_id")==null?"":","+isContainsKey(checkOb.getRefParent(), "iot_params.site.site_id"));
+							insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.object.object_id")==null?EMPTY:isContainsKey(checkOb.getRefParent(), "iot_params.object.object_id"));
+							insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.site.site_id")==null?EMPTY:","+isContainsKey(checkOb.getRefParent(), "iot_params.site.site_id"));
 							insert.append("}\n");
 						}
 						else if(checkOb.getRefParent().containsKey("iot_params.object.object_id")){
 							insert.append("{");
-							insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.object.object_id")==null?"":isContainsKey(checkOb.getRefParent(), "iot_params.object.object_id"));
+							insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.object.object_id")==null?EMPTY:isContainsKey(checkOb.getRefParent(), "iot_params.object.object_id"));
 							insert.append("}\n");
 						}
 							else {
 								insert.append("{");
-								insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.site.site_id")==null?"":isContainsKey(checkOb.getRefParent(), "iot_params.site.site_id"));
+								insert.append(isContainsKey(checkOb.getRefParent(),"iot_params.site.site_id")==null?EMPTY:isContainsKey(checkOb.getRefParent(), "iot_params.site.site_id"));
 								insert.append("'}\n");
 							}
 							
