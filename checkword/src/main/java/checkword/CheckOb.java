@@ -2,11 +2,12 @@ package checkword;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
-
+/**
+ * @author nvbac
+ * Aug 3, 2018
+ */
 public class CheckOb implements Cloneable,Serializable {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private String partnerId;
     private String bucketId;
