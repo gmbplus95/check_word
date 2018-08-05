@@ -143,17 +143,15 @@ public class CheckObjectCode {
 					insert.append("'");
 					insert.append(checkOb.getObjectId());
 					insert.append("',");
-					insert.append("'");
-					insert.append(checkOb.getStartDate()==null?null:checkOb.getStartDate().getTime());
-					insert.append("',");
-					insert.append("'");
-					insert.append(checkOb.getEndDate()==null?null:checkOb.getEndDate().getTime());
-					insert.append("',");
+					insert.append(checkOb.getStartDate()==null?null:"'"+checkOb.getStartDate().getTime()+"'");
+					insert.append(",");
+					insert.append(checkOb.getEndDate()==null?null:"'"+checkOb.getEndDate().getTime()+"'");
+					insert.append(",");
 					//field
 					insert.append("{");
 					insert.append(isContainsKey(checkOb.getField(),"nature_fluid")==null?EMPTY:isContainsKey(checkOb.getField(), "nature_fluid"));
 					insert.append(isContainsKey(checkOb.getField(),"storage_capacity")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "storage_capacity"));
-					insert.append(isContainsKey(checkOb.getField(),"coefficient_pci")==null?"":","+ isContainsKey(checkOb.getField(), "coefficient_pci"));
+					insert.append(isContainsKey(checkOb.getField(),"coefficient_pci")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "coefficient_pci"));
 					insert.append(isContainsKey(checkOb.getField(),"calculation_formula")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "calculation_formula"));
 					insert.append(isContainsKey(checkOb.getField(),"delivery_id")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "delivery_id"));
 					insert.append(isContainsKey(checkOb.getField(),"stock_meter")==null?EMPTY:","+ isContainsKey(checkOb.getField(), "stock_meter"));
